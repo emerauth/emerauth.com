@@ -1,0 +1,6 @@
+/.clj-kondo
+/.cpcache
+/.lsp
+/.shadow-cljs
+/node_modules
+/resources/js/cljs-runtime
