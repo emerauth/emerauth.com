@@ -1,0 +1,14 @@
+{:deps true
+ :nrepl {:port 8777}
+ :dev-http {8200 "."}
+ :builds {:app
+          {:target :browser
+           :output-dir "resources/js"
+           :modules {:app {:init-fn com.emerauth.core/init}}
+           :dev {:build-hooks [(teknql.tailwind/start-watch!)]}
+           :release
+           {:build-hooks [(teknql.tailwind/compile-release!)]}
+           :devtools {:http-root "./"
+                      :http-port 8300}
+           :tailwind/output "resources/css/bundle.css"
+           :tailwind/files {:tailwind.css "resources/css/index.css"}}}}
