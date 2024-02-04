@@ -5,7 +5,7 @@
    [helix.core :refer [$]]
    [helix.dom :as hd]
    [refx.alpha :as refx]
-   [com.emerauth.components.navbar :as navbar]))
+   [com.emerauth.views.landing :refer [landing]]))
 
 (enable-console-print!)
 
@@ -15,7 +15,7 @@
       react-dom-client/createRoot))
 
 (defn render []
-  (->> ($ navbar/navbar) 
+  (->> ($ landing)
        ($ react/StrictMode)
        (.render app-root)))
 

@@ -11,4 +11,5 @@
            :devtools {:http-root "./"
                       :http-port 8300}
            :tailwind/output "resources/css/bundle.css"
-           :tailwind/files {:tailwind.css "resources/css/index.css"}}}}
+           :tailwind/files {:base-path "./"
+                            :tailwind.css "resources/css/index.css"}}}}
