@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       backgroundColor: {
         'emerauth-blue': '#010812',
+        'emerauth-green': '#02232C',
       },
     },
   },

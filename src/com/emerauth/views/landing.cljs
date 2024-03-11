@@ -10,8 +10,17 @@
 (defnc landing []
   (hd/div
     ($ navbar/navbar)
-    (hd/h1 "Landing Page")
-    (hd/img {:src "https://i.pinimg.com/originals/23/51/bc/2351bc65b2b5d75cef146b7edddf805b.gif"
-             :class "h-100"
-             :alt "Dancing cat"})
+    (hd/div {:class "flex flex-col items-center justify-center h-screen"}
+            (hd/h1 {:class "text-4xl font-bold text-center dark:text-white"}
+                   "Emerauth")
+            (hd/p {:class "text-lg text-center"}
+                  "Hands free, configurable and extensible authentication & authorization.")
+            (hd/div {:class "flex space-x-4 mt-4"}
+                    (hd/a {:href "https://github.com/emerauth/emerauth"
+                           :class "btn btn-primary"}
+                          "GitHub")
+                    (hd/a {:href "https://emerauth.com"
+                           :class "btn btn-secondary"}
+                          "Website")))
+
     ($ footer/footer)))

@@ -3,6 +3,9 @@
    [helix.core :refer [$ defnc <>]]
    [helix.dom :as hd]))
 
+(def emerauth-logo
+  "https://raw.githubusercontent.com/emerauth/emerauth/6181f84278119a3ec0c05bc22376ee6406aa767c/.github/content/logo.svg")
+
 (defnc github-logo []
   (hd/svg {:viewBox "0 0 128 128" :class "w-6 h-6 fill-white"}
           (hd/path {:clip-rule "evenodd" 

@@ -7,7 +7,7 @@
    [com.emerauth.components.svg :as svg]))
 
 (defnc footer []
-  (hd/footer {:class "light:bg-emerauth-blue dark:bg-emerauth-blue text-white"}
+  (hd/footer {:class "light:bg-emerauth-green dark:bg-emerauth-green text-white"}
     (hd/div {:class "flex flex-row justify-between text-center p-5"}
       (hd/p "© 2024 Emerauth. All rights reserved.")
       (hd/ul {:class "flex flex-row space-x-4"}
