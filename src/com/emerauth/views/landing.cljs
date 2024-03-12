@@ -10,17 +10,14 @@
 (defnc landing []
   (hd/div
     ($ navbar/navbar)
-    (hd/div {:class "flex flex-col items-center justify-center h-screen"}
-            (hd/h1 {:class "text-4xl font-bold text-center dark:text-white"}
-                   "Emerauth")
-            (hd/p {:class "text-lg text-center"}
-                  "Hands free, configurable and extensible authentication & authorization.")
-            (hd/div {:class "flex space-x-4 mt-4"}
-                    (hd/a {:href "https://github.com/emerauth/emerauth"
-                           :class "btn btn-primary"}
-                          "GitHub")
-                    (hd/a {:href "https://emerauth.com"
-                           :class "btn btn-secondary"}
-                          "Website")))
+    (hd/div
+      {:class "flex flex-row w-full md:w-3/4 lg:w-2/3 mx-auto"}
+      (hd/div
+        {:class "w-full border-2 border-red-500"}
+        "guto")
+      (hd/div
+        {:class "w-full border-2 border-red-500"}
+        "josue"))
 
+    (js/console.error "NAO FAZ MERGE DISSO")
     ($ footer/footer)))
